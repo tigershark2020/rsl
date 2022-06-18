@@ -4,7 +4,11 @@ Forked from http://trmm-fc.gsfc.nasa.gov/trmm_gv/software/rsl/functionality_inde
 
 To compile:
 ```
-./configure --prefix=/your/install/directory
+sudo apt-get install libbz2-dev libz-dev netpbm
+./configure --prefix=/usr/local/trmm CFLAGS=-I/usr/include/tirpc/
 make AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
 sudo make install AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
+sudo cp /usr/local/trmm/bin/wsr88d_decode_ar2v /usr/bin/
+cd /usr/local/trmm/lib/
+sudo cp librsl.0.1 /usr/lib/
 ```
