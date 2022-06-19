@@ -10,5 +10,5 @@ make AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
 sudo make install AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
 sudo cp /usr/local/trmm/bin/wsr88d_decode_ar2v /usr/bin/
 cd /usr/local/trmm/lib/
-sudo cp librsl.0.1 /usr/lib/
+sudo cp librsl.so.1 /usr/lib/
 ```
